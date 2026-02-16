@@ -1,0 +1,53 @@
+proxies:
+  - name: "UK-Reality"
+    type: vless
+    server: api.aonxa.shop
+    port: 22648
+    uuid: f732bdfb-365d-46cb-b151-3599c92f3685
+    network: tcp
+    udp: true
+    tls: true
+    flow: xtls-rprx-vision
+    servername: api.aonxa.shop
+    reality-opts:
+      public-key: LLr56IP_cJF3nAjddxPVvK2HSP5cS07NKmlhg_S3TXM
+      short-id: 6ba85179e30d4fc2
+    client-fingerprint: chrome
+
+  - name: "UK-TLS"
+    type: vless
+    server: api.aonxa.shop
+    port: 443
+    uuid: f732bdfb-365d-46cb-b151-3599c92f3685
+    network: tcp
+    udp: true
+    tls: true
+    servername: api.aonxa.shop
+    flow: xtls-rprx-vision
+    client-fingerprint: chrome
+
+  - name: "UK-WS"
+    type: vless
+    server: api.aonxa.shop
+    port: 443
+    uuid: f732bdfb-365d-46cb-b151-3599c92f3685
+    udp: true
+    tls: true
+    network: ws
+    servername: api.aonxa.shop
+    ws-opts:
+      path: /lxoxws
+      headers:
+        Host: api.aonxa.shop
+    client-fingerprint: chrome
+
+proxy-groups:
+  - name: "🚀 Select"
+    type: select
+    proxies:
+      - UK-Reality
+      - UK-TLS
+      - UK-WS
+
+rules:
+  - MATCH,🚀 Select
