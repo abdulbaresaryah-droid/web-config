@@ -1,0 +1,4 @@
+vless://f732bdfb-365d-46cb-b151-3599c92f3685@vpn.aonxa.shop:22648?encryption=none&security=reality&type=tcp&sni=vpn.aonxa.shop&fp=chrome&pbk=LLr56IP_cJF3nAjddxPVvK2HSP5cS07NKmlhg_S3TXM&sid=6ba85179e30d4fc2&flow=xtls-rprx-vision#UK-Reality-Vision
+vless://f732bdfb-365d-46cb-b151-3599c92f3685@vpn.aonxa.shop:443?encryption=none&flow=xtls-rprx-vision&security=tls&sni=vpn.aonxa.shop&fp=chrome&type=tcp#UK-TLS-Vision
+vless://f732bdfb-365d-46cb-b151-3599c92f3685@vpn.aonxa.shop:443?encryption=none&security=tls&type=ws&host=vpn.aonxa.shop&sni=vpn.aonxa.shop&fp=chrome&path=/lxoxws#UK-WS-TLS
+trojan://f732bdfb-365d-46cb-b151-3599c92f3685@vpn.aonxa.shop:443?peer=vpn.aonxa.shop&fp=chrome&sni=vpn.aonxa.shop&alpn=http/1.1#UK-Trojan
